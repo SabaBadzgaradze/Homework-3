@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#09377E"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile Info"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:maxLines="1"
+            android:maxLength="50"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="50dp"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:background="@drawable/ed_bg"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:inputType="textLongMessage"
+            android:paddingBottom="10dp"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="15dp"
+            android:maxLines="1"
+            android:maxLength="30"
+            android:background="@drawable/ed_bg"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:inputType="textCapSentences|textCapWords"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ed_bg"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:inputType="textCapSentences|textCapWords"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:layout_marginHorizontal="60dp"
+            android:background="@drawable/ed_bg"
+            android:layout_marginTop="15dp"
+            android:maxLines="1"
+            android:maxLength="30"
+            android:hint="Last Name"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginHorizontal="60dp"
+            android:background="@drawable/ed_bg"
+            android:layout_marginTop="15dp"
+            android:inputType="number"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:hint="Age"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="50dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_bg"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="50dp"
+            android:background="@drawable/button_bg"
+            android:textColor="@color/white"
+            android:text="Clear"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
